@@ -25,7 +25,6 @@ public class UserDetailsServiceDAO implements UserDetailsService {
             user.setName(rs.getString(1));
             user.setPassword(rs.getString(2));
             user.setEnabled(rs.getBoolean(3));
-            System.out.println(user.getName()+" "+user.getPassword());
             return user;
         }
     };
