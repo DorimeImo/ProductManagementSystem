@@ -26,7 +26,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 
     public void configureGlobal(AuthenticationManagerBuilder builder) throws Exception{
-        System.out.println("I AM HERE");
         builder.authenticationProvider(authenticationProvider());
     }
 
